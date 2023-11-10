@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #8E9B97;
+}
+
+header .navbar{
+    display: flex;
+
+    max-width: 1200px;
+    width: auto;
+    padding: 10px;
+    margin-inline: auto;
+
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1 span{
+    border-radius: 50px;
+    background-color: white;
+    color: #8E9B97;
+}
+
+nav ul{
+    padding-inline: 4rem;
+
+    display: flex;
+    gap: 20px;
+}
+
+nav li{
+    border-radius: 100px;
+    padding: 5px;
+    list-style-type: none;
+
+}
+    
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+nav li:hover{
+    background-color: white;
+}
+
+nav a:hover{
+    font-weight: bold;
+    color: #8E9B97;
+}
+
+main .content{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+main .content .aboutMe{
+    margin-top: 60px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .aboutMe .image{
+    flex: 1;
+    display: flex;
+}
+
+main .content .aboutMe .image img{
+    margin: auto;
+    min-width: 250px;
+    width: 80%;
+
+    border-radius: 50%;
+}
+
+main .content .aboutMe .deskripsi{
+    flex: 1 1;
+}
+
+main .content .aboutMe .deskripsi .nama{
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+main .content .aboutMe .deskripsi p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .content .skillProject .title{
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+main .content .skillProject .list-skillProject{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+main .content .skillProject .list-skillProject .skillProject-deskripsi{
+    border-radius: 20px;
+    margin-top: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #8E9B97;
+    color: white;
+}
+
+main .content .skillProject .list-skillProject .title-skillProject{
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+main .content .skillProject .list-skillProject p{
+    padding: 5px;
+    text-align: center;
+}
+
+main .content .skillProject .list-skillProject .skillProject-deskripsi:hover{
+    margin: 0.6rem 0;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #8E9B97;
+}
+
+main aside .social-media li{
+    list-style-type: none;
+    margin: 1.5rem 0rem;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+footer{
+    width: 100%;
+    padding: 50px;
+    
+    background-color: #8E9B97;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main .content .aboutMe{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .content .aboutMe .deskripsi .nama{
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 510px) {
+    header .navbar{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main .content .skillProject .list-skillProject{
+        flex-direction: column;
+    }
+}
